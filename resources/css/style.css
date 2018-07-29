@@ -174,7 +174,6 @@ header .mobile {
   }
 
   #sign-up-cta {
-    position: static;
     width: auto;
     height: auto;
     background-color: transparent;
@@ -200,6 +199,8 @@ header .mobile {
 
 @media only screen and (max-width: 450px) {
   #sign-up-section {
+    align-items: center;
+    justify-content: center;
     height: 20rem;
   }
 
@@ -363,20 +364,21 @@ header .mobile {
 }
 
 #quotes-section .quote {
-  padding-right: 1.875rem;
   font-family: "Palatino", serif;
+  padding-right: 1.875rem;
   font-size: 1.875rem;
   line-height: 1.1;
   font-style: italic;
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
   }
 
@@ -385,7 +387,7 @@ header .mobile {
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
